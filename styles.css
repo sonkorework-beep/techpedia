@@ -66,6 +66,7 @@ section{
 }
 
 /*    MAIN    */
+/* Меняется от шаблона к шаблону */
 main{
     height: auto;
 }
@@ -89,6 +90,18 @@ main{
     justify-content: space-around;
 }
 
+.rowshit{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around; 
+   width: 20%;
+}
+
+.guide{
+    width: auto;
+    height: 100%;
+}
+
 .ftp{
     text-decoration: solid;
     font-weight: bold;
@@ -103,4 +116,11 @@ main{
     flex-direction: column;
     margin-left: 2em;
     width: 80%;
+}
+
+.countcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
 }
