@@ -1,5 +1,5 @@
 WEB-утилита для сотрудников тех-поддержки.
-
+***
 ### Node backend (нужен для админок, upload)
 1) Установить Node.js 18+.
 2) В корне или:
@@ -18,11 +18,11 @@ WEB-утилита для сотрудников тех-поддержки.
 
 Пример:
 - `python -m http.server 8000`
-
+***
 ## Конфигурация
 - Статьи: `data/guides.json` + файлы в `.guides/`
 - Софт/инструкции: `data/software.json` + ссылки на файлы (например `ftp://...` или `/downloads/...`)
-
+***
 # Все что дальше - не работает. Чинить не буду. Надо переделывать на SQL. 
 - Интеграции (Apps Script): `data/integrations.json` (поле `appsScriptUrl`)
 - Tasks: `data/tasks.config.json` 
