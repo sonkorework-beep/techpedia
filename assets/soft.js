@@ -95,6 +95,7 @@ function renderList(container, items) {
     download.href = it.file;
     download.target = "_blank";
     download.rel = "noopener";
+    download.download = "";
     download.textContent = "Скачать";
     actions.appendChild(download);
 
