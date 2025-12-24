@@ -20,10 +20,11 @@ WEB-утилита для сотрудников тех-поддержки.
 ## Конфигурация
 - Статьи: `data/guides.json` + файлы в `.guides/`
 - Софт/инструкции: `data/software.json` + ссылки на файлы (например `ftp://...` или `/downloads/...`)
-- Интеграции (Apps Script): `data/integrations.json` (поле `appsScriptUrl`)
-- Tasks: `data/tasks.config.json`
-- Break: `data/break.config.json`
 
-## Apps Script
+## Все что дальше - не работает. Чинить не буду. Надо переделывать на SQL. 
+- Интеграции (Apps Script): `data/integrations.json` (поле `appsScriptUrl`)
+- Tasks: `data/tasks.config.json` 
+- Break: `data/break.config.json`
+# Apps Script
 Шаблон кода лежит в `apps-script/Code.gs`.
 После деплоя Web App вставьте URL в `data/integrations.json`.
