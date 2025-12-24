@@ -4,7 +4,7 @@ WEB-утилита для сотрудников тех-поддержки.
 1) Установить Node.js 18+.
 2) В корне или:
 - `npm install`
-- `npm run start`
+- `npm run start`   
 Или:
 - `STARTUP.bat`
 3) Дефолтный адрес:
@@ -28,5 +28,5 @@ WEB-утилита для сотрудников тех-поддержки.
 - Tasks: `data/tasks.config.json` 
 - Break: `data/break.config.json`
 ### Apps Script
-Шаблон кода лежит в `apps-script/Code.gs`.
+Шаблон кода лежит в `apps-script/Code.gs`.    
 После деплоя Web App вставьте URL в `data/integrations.json`.
