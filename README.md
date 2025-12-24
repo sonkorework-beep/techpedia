@@ -1,10 +1,12 @@
 WEB-утилита для сотрудников тех-поддержки.
 
-### Node backend (нужен для админок, upload, tasks/break)
+### Node backend (нужен для админок, upload)
 1) Установить Node.js 18+.
-2) В корне:
+2) В корне или:
 - `npm install`
 - `npm run start`
+Или:
+- `STARTUP.bat`
 3) Дефолтный адрес:
 - `http://localhost:8000/index.html`
 
@@ -21,10 +23,10 @@ WEB-утилита для сотрудников тех-поддержки.
 - Статьи: `data/guides.json` + файлы в `.guides/`
 - Софт/инструкции: `data/software.json` + ссылки на файлы (например `ftp://...` или `/downloads/...`)
 
-## Все что дальше - не работает. Чинить не буду. Надо переделывать на SQL. 
+# Все что дальше - не работает. Чинить не буду. Надо переделывать на SQL. 
 - Интеграции (Apps Script): `data/integrations.json` (поле `appsScriptUrl`)
 - Tasks: `data/tasks.config.json` 
 - Break: `data/break.config.json`
-# Apps Script
+### Apps Script
 Шаблон кода лежит в `apps-script/Code.gs`.
 После деплоя Web App вставьте URL в `data/integrations.json`.
