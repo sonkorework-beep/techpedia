@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Добро пожаловать — Techpedia</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="fixedmargin">
+  <main>
+    <div class="container">
+      <section class="panel">
+        <div class="panel__inner">
+          <h1 class="h1" style="font-size: 22px;">Добро пожаловать</h1>
+          <p class="muted" style="margin-top: 6px;">
+            Techpedia — внутренняя база знаний по оборудованию и специализированному ПО.
+          </p>
+          <hr />
+          <h2 style="margin: 0 0 8px; font-size: 16px;">Структура</h2>
+          <ul style="margin: 0; padding-left: 18px;">
+            <li><b>Главная</b> — краткая информация и история версий.</li>
+            <li><b>Гайды</b> — статьи из папки <code>.guides/</code>, список берётся из <code>data/guides.json</code>.</li>
+            <li><b>Софт</b> — каталог файлов/инструкций из <code>data/software.json</code>.</li>
+          </ul>
+          <hr />
+          <h2 style="margin: 0 0 8px; font-size: 16px;">Как добавить новую статью</h2>
+          <ol style="margin: 0; padding-left: 18px;">
+            <li>Создайте файл статьи в <code>.guides/</code> (например <code>.guides/new-article.html</code>).</li>
+            <li>Добавьте запись в <code>data/guides.json</code>: <code>id</code>, <code>title</code>, <code>path</code>, <code>tags</code>, <code>keywords</code>.</li>
+            <li>Обновите теги/ключевые слова — по ним работает поиск на странице <b>Гайды</b>.</li>
+          </ol>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

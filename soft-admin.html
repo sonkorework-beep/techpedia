@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Управление софтом — Techpedia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Images/favicon.png" />
+</head>
+<body class="fixedmargin">
+<div class="bodywrap">
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="header__nav" aria-label="Навигация">
+        <a href="index.html" class="headermenu">Главная</a>
+        <a href="guides.html" class="headermenu">Гайды</a>
+        <a href="soft.html" class="headermenu">Софт</a>
+        <a href="soft-admin.html" class="headermenu" aria-current="page">Софт (админ)</a>
+        <a href="tasks.html" class="headermenu">Tasks</a>
+        <a href="break.html" class="headermenu">Break</a>
+      </nav>
+      <a href="index.html" aria-label="На главную">
+        <img src="Images/logobackless.png" class="logo" alt="Techpedia" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container layout-2col">
+      <aside class="panel">
+        <div class="panel__inner">
+          <h1 class="h1" style="font-size: 20px;">Управление файлами</h1>
+          <p class="muted" style="margin: 6px 0 12px;">
+            Загрузка сохраняет файл в <code>downloads/</code>. Для работы нужен Node backend.
+          </p>
+
+          <div class="card">
+            <div class="muted" style="font-size: 12px; margin-bottom: 6px;">Загрузка</div>
+            <input id="uploadFile" class="input" type="file" />
+            <div style="height: 10px;"></div>
+            <button id="uploadBtn" class="chip" type="button">Загрузить</button>
+            <div id="uploadMeta" class="muted" style="margin-top: 8px;"></div>
+          </div>
+
+          <div style="height: 12px;"></div>
+
+          <div class="row">
+            <button id="reload" class="chip" type="button">Обновить</button>
+            <button id="newItem" class="chip" type="button">Новая запись</button>
+          </div>
+
+          <div style="height: 10px;"></div>
+          <input id="adminSearch" class="input" type="search" placeholder="Фильтр по названию…" autocomplete="off" />
+          <div style="height: 10px;"></div>
+
+          <select id="adminList" class="select" size="14" aria-label="Список программ"></select>
+          <div id="adminMeta" class="muted" style="margin-top: 10px;"></div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel__inner">
+          <div class="row" style="justify-content: space-between;">
+            <div style="font-weight: 800;">Карточка</div>
+            <div class="row">
+              <button id="save" class="chip" type="button">Сохранить</button>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="card">
+            <div class="row">
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">ID</div>
+                <input id="f_id" class="input" placeholder="например: atol-driver" />
+              </div>
+              <div style="flex: 2;">
+                <div class="muted" style="font-size: 12px;">Название</div>
+                <input id="f_title" class="input" placeholder="Драйвер АТОЛ" />
+              </div>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div>
+              <div class="muted" style="font-size: 12px;">Ссылка на файл</div>
+              <input id="f_file" class="input" placeholder="/downloads/file.zip или ftp://..." />
+              <div class="row" style="margin-top: 8px;">
+                <a id="openFile" class="chip hidden" target="_blank" rel="noopener">Открыть файл</a>
+              </div>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div>
+              <div class="muted" style="font-size: 12px;">Описание</div>
+              <textarea id="f_desc" class="input" rows="2"></textarea>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div class="row">
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">Теги (через запятую)</div>
+                <input id="f_tags" class="input" placeholder="атол, фр, драйвер" />
+              </div>
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">Ключевые слова (через запятую)</div>
+                <input id="f_keywords" class="input" placeholder="kkt, касса" />
+              </div>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div>
+              <div class="muted" style="font-size: 12px;">Связанная статья (guideId)</div>
+              <input id="f_guideId" class="input" placeholder="например: fiscal-atol" />
+              <div class="row" style="margin-top: 8px;">
+                <a id="openGuide" class="chip hidden" target="_blank" rel="noopener">Открыть статью</a>
+              </div>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div class="row">
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">Переименовать файл в downloads/</div>
+                <input id="f_rename" class="input" placeholder="Новое имя файла.ext" />
+              </div>
+              <div>
+                <button id="renameBtn" class="chip" type="button">Переименовать</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="status" class="muted" style="margin-top: 10px;"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+<script type="module" src="assets/soft-admin.js"></script>
+</body>
+</html>

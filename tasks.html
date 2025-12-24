@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasks — Techpedia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Images/favicon.png" />
+</head>
+<body class="fixedmargin">
+<div class="bodywrap">
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="header__nav" aria-label="Навигация">
+        <a href="index.html" class="headermenu">Главная</a>
+        <a href="guides.html" class="headermenu">Гайды</a>
+        <a href="soft.html" class="headermenu">Софт</a>
+        <a href="tasks.html" class="headermenu" aria-current="page">Tasks</a>
+        <a href="break.html" class="headermenu">Break</a>
+      </nav>
+      <a href="index.html" aria-label="На главную">
+        <img src="Images/logobackless.png" class="logo" alt="Techpedia" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container layout-2col">
+      <aside class="panel">
+        <div class="panel__inner">
+          <h1 class="h1" style="font-size: 20px;">Задачи</h1>
+          <p class="muted" style="margin: 6px 0 12px;">
+            Данные читаются/записываются в Google Sheets через Apps Script (через backend-прокси).
+          </p>
+
+          <div class="card">
+            <div class="muted" style="font-size: 12px; margin-bottom: 6px;">Добавить задачу</div>
+
+            <div class="row">
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">ФИО</div>
+                <input id="t_fio" class="input" placeholder="Иванов И.И." />
+              </div>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div>
+              <div class="muted" style="font-size: 12px;">Тема</div>
+              <input id="t_topic" class="input" placeholder="Касса / драйвер / сеть…" />
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div>
+              <div class="muted" style="font-size: 12px;">Описание</div>
+              <textarea id="t_desc" class="input" rows="3"></textarea>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div class="row">
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">Приоритет</div>
+                <select id="t_priority" class="select">
+                  <option>Низкий</option>
+                  <option selected>Средний</option>
+                  <option>Высокий</option>
+                </select>
+              </div>
+              <div style="flex: 1;">
+                <div class="muted" style="font-size: 12px;">Статус</div>
+                <select id="t_status" class="select">
+                  <option selected>Новая</option>
+                  <option>В работе</option>
+                  <option>Готово</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="height: 10px;"></div>
+
+            <div class="row">
+              <button id="t_add" class="chip" type="button">Добавить</button>
+              <button id="t_reload" class="chip" type="button">Обновить</button>
+            </div>
+
+            <div id="t_meta" class="muted" style="margin-top: 8px;"></div>
+          </div>
+
+          <div class="card" style="margin-top: 12px;">
+            <div class="muted" style="font-size: 12px;">Статус интеграции</div>
+            <div id="t_integration" class="muted" style="margin-top: 6px;"></div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel__inner">
+          <div class="row" style="justify-content: space-between;">
+            <div>
+              <div style="font-weight: 800;">Таблица задач</div>
+              <div id="t_count" class="muted" style="margin-top: 4px;"></div>
+            </div>
+            <div class="row">
+              <input id="t_filter" class="input" style="width: 280px;" placeholder="Поиск по таблице…" />
+            </div>
+          </div>
+          <hr />
+          <div id="t_table"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+<script type="module" src="assets/tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "spreadsheetId": "1EaxSHnMpH4QYJwCbLufY7gxQyEFSnG_CQn9rMkpom14",
+  "dailySheetPrefix": "Перерывы",
+  "configSheetName": "Перерывы_Настройки",
+  "pollMs": 5000,
+  "maxHistoryDays": 183,
+  "defaults": {
+    "breakMinutes": 15,
+    "lunchMinutes": 30
+  }
+}

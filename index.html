@@ -1,56 +1,80 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
-    <title>Tech</title>
-    <link rel="stylesheet" href="/techpedia/styles.css">
-    <link rel="icon" href="Images/favicon.png">
-    <base href="C:/techpedia/">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techpedia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Images/favicon.png" />
 </head>
-
 <body class="fixedmargin">
 <div class="bodywrap">
-    <!--Хеадер на всех темплах-->
     <header class="header">
-        <nav style="display: flex; flex-direction: row;">
-            <a href="index.html" class="headermenu">Главная</a>
-            <a href="guides.html" class="headermenu">Гайды</a>
-            <a href="soft.html" class="headermenu">Софт</a>
-        </nav>
-        <div>
-            <img src="Images/logobackless.png", style="height: auto; width: 200px;">
+        <div class="container header__inner">
+            <nav class="header__nav" aria-label="Навигация">
+                <a href="index.html" class="headermenu" aria-current="page">Главная</a>
+                <a href="guides.html" class="headermenu">Гайды</a>
+                <a href="soft.html" class="headermenu">Софт</a>
+                <a href="tasks.html" class="headermenu">Tasks</a>
+                <a href="break.html" class="headermenu">Break</a>
+            </nav>
+            <a href="index.html" aria-label="На главную">
+                <img src="Images/logobackless.png" class="logo" alt="Techpedia" />
+            </a>
         </div>
     </header>
-    
 
-    <main class="censhit">
-        <div class="wtf">
-            <h1 class="texthead">Техновики</h1>
-            <h2 class="texthead">Вся информация по специфическому ПО и оборудованию</h2>
-        </div>
-        <br>
-        <br>
-        <div class="wtf">
-            <span class="ftp">Для подключения к FTP-серверу со всем софтом закинь в путь в проводнике это:</span>
-            <span class="rest">ftp://192.168.1.199</span>
-            <img src="Images/path.png", style="height: auto; width: 25%;">
-        </div>
-        <div class="updates">
-            <section>
-                <h3>16.12.2025</h3>
-                <ul>
-                    <span>Доведение заглавной до ума.</span><br>
-                    <span>Создание шаблона для будущих страниц.</span><br>
-                    <span>Продолжение очистки файлов от вирусов.</span>
-                </ul>
+    <main>
+        <div class="container censhit">
+            <section class="panel">
+                <div class="panel__inner">
+                    <div class="wtf">
+                        <h1 class="h1">Техновики</h1>
+                        <p class="h2">Вся информация по специфическому ПО и оборудованию</p>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h3>18.11.2025</h3>
-                <ul>
-                    <span>Создание FTP-сервера.</span><br>
-                    <span>Создание шаблона для вики, начало оформления заглавной страницы.</span><br>
-                    <span>Начало попыток очистить файлы от Synaptics worm.</span>
-                </ul>
+
+            <section class="panel">
+                <div class="panel__inner">
+                    <h2 class="h1" style="font-size: 20px;">Файловый сервер</h2>
+                    <p class="muted" style="margin-top: 6px;">
+                        Для подключения к FTP-серверу со всем софтом:
+                    </p>
+                    <div class="row" style="margin-top: 10px;">
+                        <span class="chip" style="cursor: default;">ftp://192.168.1.199</span>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <img src="Images/path.png" style="height: auto; width: min(520px, 100%);" alt="Пример пути в проводнике" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel__inner">
+                    <h2 class="h1" style="font-size: 20px;">История версий</h2>
+                    <div class="updates" style="margin-top: 10px;">
+                        <section>
+                            <h3 style="margin: 0 0 6px;">16.12.2025</h3>
+                            <ul style="margin: 0; padding-left: 18px;">
+                                <li>Доведение заглавной до ума.</li>
+                                <li>Создание шаблона для будущих страниц.</li>
+                                <li>Продолжение очистки файлов от вирусов.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 style="margin: 0 0 6px;">18.11.2025</h3>
+                            <ul style="margin: 0; padding-left: 18px;">
+                                <li>Создание FTP-сервера.</li>
+                                <li>Создание шаблона для вики, начало оформления заглавной страницы.</li>
+                                <li>Начало попыток очистить файлы от Synaptics worm.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
 </div>
 </body>
+</html>

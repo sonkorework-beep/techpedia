@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "anydesk",
+      "title": "AnyDesk",
+      "file": "ftp://192.168.1.199/software/AnyDesk.exe",
+      "description": "Удалённый доступ (пример записи).",
+      "tags": ["удаленный доступ", "support"],
+      "keywords": ["remote", "anydesk"],
+      "guideId": "welcome"
+    },
+    {
+      "id": "atol-driver",
+      "title": "Драйвер АТОЛ",
+      "file": "ftp://192.168.1.199/software/ATOL/driver.zip",
+      "description": "Пакет драйвера для ФР АТОЛ (пример записи).",
+      "tags": ["атол", "фр", "драйвер"],
+      "keywords": ["kkt", "касса"],
+      "guideId": "fiscal-atol"
+    },
+    {
+      "id": "ftp-manual",
+      "title": "Инструкция по FTP",
+      "file": "ftp://192.168.1.199/software/FTP-Manual.pdf",
+      "description": "Короткая памятка по подключению/доступу.",
+      "tags": ["ftp", "сеть"],
+      "keywords": ["проводник", "доступ"],
+      "guideId": "ftp"
+    }
+  ]
+}

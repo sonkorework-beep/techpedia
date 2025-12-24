@@ -1,0 +1,20 @@
+{
+  "spreadsheetId": "1yx_Lh1uvfUt3dPmfvn2PYIPdbecbCr1zk2ImOL5uYpM",
+  "sheetName": "Заявки на поддержку",
+  "pollMs": 5000,
+  "columns": [
+    { "key": "Дата", "type": "datetime", "readonly": true },
+    { "key": "ФИО", "type": "text" },
+    { "key": "Тема", "type": "text" },
+    { "key": "Описание", "type": "multiline" },
+    { "key": "Приоритет", "type": "select", "options": ["Низкий", "Средний", "Высокий"] },
+    { "key": "Статус", "type": "select", "options": ["Новая", "В работе", "Готово"] }
+  ],
+  "formatRules": {
+    "Статус": {
+      "Новая": { "bg": "#fff7ed" },
+      "В работе": { "bg": "#eef2ff" },
+      "Готово": { "bg": "#ecfdf5" }
+    }
+  }
+}
